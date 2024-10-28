@@ -1,0 +1,46 @@
+You are on an analytics team for A-Z Consulting and one of your new clients is a manufacturer of Tequila, 
+Rum and Whiskey. You are assigned to this project and told that the client is considering expanding 
+into a new market: Des Moines, Iowa, USA. They have hired A-Z Consulting to conduct the preparatory research prior 
+to their possible expansion.
+
+
+We know we have given you an open-ended task. Our goal is to better understand your decision making process. 
+Therefore, we are more interested in how you arrive to your solution rather than the solution itself. 
+There is no 'correct answer', but please make a case for your analysis/interpretation. 
+That being said, we will evaluate you on your ability to guide us through your work, your story-telling / story-stitching, 
+design and presentation skills. Should you hit a roadblock, please feel free to contact us
+
+Choose any medium you are comfortable with for your presentation. We do not expect you to spend more 
+than six hours on this task, so feel free to use tools that you are familiar/comfortable with. 
+In the end, you will present your findings to us for fifteen minutes, followed by a discussion in our group.
+
+You have access to the entire Iowa Liquor Sales hosted on a Google Cloud Bucket in CSV format. 
+Data is provided as-is and has not been pre-processed for you.
+
+
+| Field name | Type | Description | | 
+
+● | invoice_and_item_number | STRING | Concatenated invoice and line number associated with the liquor order. This provides a unique identifier for the individual liquor products included in the store order. | | 
+● | date | DATE | Date of order | | 
+● | store_number | STRING | Unique number assigned to the store who ordered the liquor. | | 
+● | store_name | STRING | Name of store who ordered the liquor. | | 
+● | address | STRING | Address of store who ordered the liquor. | | 
+● | city | STRING | City where the store who ordered the liquor is located | | 
+● | zip_code | STRING | Zip code where the store who ordered the liquor is located | |
+● | store_location | STRING | Location of store who ordered the liquor. The Address, City, State and Zip Code are geocoded to provide geographic coordinates. Accuracy of geocoding is dependent on how well the address is interpreted and the completeness of the reference data used. | | 
+● | county_number | STRING | Iowa county number for the county where store who ordered the liquor is located | | 
+● | county | STRING | County where the store who ordered the liquor is located | | 
+● | category | STRING | Category code associated with the liquor ordered | | 
+● | category_name | STRING | Category of the liquor ordered. | | 
+● | vendor_number | STRING | The vendor number of the company for the brand of liquor ordered | | 
+● | vendor_name | STRING | The vendor name of the company for the brand of liquor ordered | | 
+● | item_number | STRING | Item number for the individual liquor product ordered. | | 
+● | item_description | STRING | Description of the individual liquor product ordered. | | 
+● | pack | INTEGER | The number of bottles in a case for the liquor ordered | | 
+● | bottle_volume_ml | INTEGER | Volume of each liquor bottle ordered in milliliters. | | 
+● | state_bottle_cost | FLOAT | The amount that Alcoholic Beverages Division paid for each bottle of liquor ordered | | 
+● | state_bottle_retail | FLOAT | The amount the store paid for each bottle of liquor ordered | | 
+● | bottles_sold | INTEGER | The number of bottles of liquor ordered by the store | | 
+● | sale_dollars | FLOAT | Total cost of liquor order (number of bottles multiplied by the state bottle retail) | | 
+● | volume_sold_liters | FLOAT | Total volume of liquor ordered in liters. (i.e. (Bottle Volume (ml) x Bottles Sold)/1,000)" | | 
+● | volume_sold_gallons | FLOAT | Total volume of liquor ordered in gallons. (i.e. (Bottle Volume (ml) x Bottles Sold)/3785.411784)" | |
